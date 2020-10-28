@@ -13,6 +13,21 @@ public class Program {
         splitString(text);
         compareString(third, first);
         findJava(strings);
+
+        String name = "Veronika";
+        String jobTitle = "SDET";
+        int day = 30;
+        String month = "March";
+
+        StringBuilder str = new StringBuilder(" is going to be  on   ");
+        str.insert(0, name);
+        str.insert(24, jobTitle);
+        str.insert(32, month);
+        str.insert(38, day);
+        System.out.println(str);
+
+        String strstr = String.format("%s is going to be %s on %s %d", name, jobTitle, month, day);
+        System.out.println(strstr);
     }
 
     public static void length(String first, String second) {
